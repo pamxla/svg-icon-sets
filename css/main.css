@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-family: 'Overpass', sans-serif;
   line-height: 1.5;
-  background-color: #ff9500;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
 }
 
 *, *::before, *::after {
@@ -24,6 +24,7 @@ ul {
 
 li{
   list-style: none;
+  text-align: center;
 }
 
 h2 {
@@ -33,6 +34,8 @@ h2 {
 
 p {
   color: #fff;
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
 a{
