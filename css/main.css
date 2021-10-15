@@ -21,14 +21,10 @@ h1 {
   color: #fff;
 }
 
-section {
+ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding-left: 0;
-}
-
-ul{
   padding-left: 0;
 }
 
@@ -56,21 +52,45 @@ a{
   color: #fff;
 }
 
+.icon {
+  color: #fff;
+  width: 8em;
+  height: 8em;
+}
+
 @media only screen and (min-width: 38em) {
 
 h1 {
   text-align: center;
 }
 
-section {
-  display: grids;
+ul {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  gap: 6vmin;
 }
 
 a{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
+  align-items: center;
 }
+}
+
+@media only screen and (min-width: 60em) {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 6vmin;
+    margin: 1.5rem;
+  }
+
+  a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
