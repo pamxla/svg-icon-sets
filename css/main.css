@@ -1,9 +1,34 @@
 html {
   box-sizing: border-box;
-  font-family: "Overpass"
+  font-family: 'Overpass', sans-serif;
   line-height: 1.5;
+  background-color: #ff9500;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+a{
+  border-radius: .2rem;
+  color: #fff;
 }
