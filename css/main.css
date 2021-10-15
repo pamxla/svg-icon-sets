@@ -8,6 +8,9 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+body {
+  margin: 1.5rem;
+}
 
 h1 {
   font-size: 2rem;
@@ -17,6 +20,10 @@ h1 {
 ul {
   display: flex;
   flex-direction: column;
+}
+
+li{
+  list-style: none;
 }
 
 h2 {
@@ -29,6 +36,9 @@ p {
 }
 
 a{
+  border-style: solid;
   border-radius: .2rem;
+  padding: 1rem;
+  text-decoration: none;
   color: #fff;
 }
