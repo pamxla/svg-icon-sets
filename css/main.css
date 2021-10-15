@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
   font-family: 'Overpass', sans-serif;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   line-height: 1.5;
   background-image: linear-gradient(#ff9500, #ff5e3a);
 }
@@ -17,10 +21,15 @@ h1 {
   color: #fff;
 }
 
-ul {
+section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  padding-left: 0;
+}
+
+ul{
+  padding-left: 0;
 }
 
 li{
@@ -45,4 +54,23 @@ a{
   padding: 1rem;
   text-decoration: none;
   color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: grids;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+a{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 }
