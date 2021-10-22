@@ -12,6 +12,7 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
 }
@@ -64,11 +65,12 @@ a {
   width: 8rem;
 }
 
-:hover {
-
+a:hover {
+  text-decoration: overline;
 }
 
 @media only screen and (min-width: 38em) {
+
   h1 {
     text-align: center;
     padding: 1rem;
@@ -85,23 +87,25 @@ a {
     margin: 0;
   }
 
-  section{
+  section {
     margin: 2rem;
   }
 
-  p{
-  padding-bottom: 1rem;
+  p {
+    padding-bottom: 1rem;
   }
 
-  a{
+  a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
+
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -110,9 +114,9 @@ a {
     margin: 1.5rem;
   }
 
-li {
-  margin: 0;
-}
+  li {
+    margin: 0;
+  }
 
   a {
     display: flex;
@@ -123,4 +127,5 @@ li {
   h1 {
     padding: 6vmin;
   }
+
 }
